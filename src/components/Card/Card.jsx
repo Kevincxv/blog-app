@@ -6,7 +6,7 @@ const Card = () => {
   return (
     <div className={styles.container}>
         <div className={styles.imageContainer}>
-            <Image src="/p1.jpg" alt="" fill className={styles.image}></Image>
+            <Image src="/p1.jpeg" alt="" fill className={styles.image}></Image>
         </div>
         <div className={styles.textContainer}>
             <div className={styles.detail}>
