@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.editor {
+    display: flex;
+    gap: 20px;
+    height: 700px;
+    position: relative;
+}
+
+.button, .addButton {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.addButton {
+    border-color: #1a8917;
+}
+
+.add {
+    display: flex;
+    gap: 20px;
+    background-color: var(--bg);
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    left: 50px;
+}
+
+.input {
+    padding: 50px;;
+    font-size: 64px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--textColor)
+}
+
+.input::placeholder {
+    color: #b3b3b1;
+}
+
+.textArea {
+    width: 100%;
+}
+
+.publish {
+    position: absolute;
+    top: 31px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a8917;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
