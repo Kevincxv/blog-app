@@ -9,7 +9,7 @@ const AuthLinks = () => {
 
   const [open, setOpen] = useState(false)
 
-  const status = "notauthenticated"
+  const status = "authenticated"
     
   return (
     <>
@@ -36,7 +36,7 @@ const AuthLinks = () => {
           <Link href="/login" className={styles.link}>Login</Link>
           ) : (
             <>
-            <Link href="/write" className={styles.link}>Logout</Link>
+            <Link href="/write" className={styles.link}>Write</Link>
             <span className={styles.link}>Logout</span>
         </>
       )}
