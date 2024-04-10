@@ -5,12 +5,12 @@ import styles from "./write.module.css"
 import Image from "next/image"
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css"
-import { useSession} from "next-auth/react"
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 const WritePage = () => {
 
-  const {status} = useSession();
+  const { status} = useSession();
 
   const router = useRouter();
 
@@ -18,12 +18,13 @@ const WritePage = () => {
   const [value, setValue] = useState("")
 
   if (status === "loading") {
-    return <div className={styles.loading}>Loading...</div>
+    return <div className={styles.loding}>Loading...</div>
   }
 
-  if (status === "authenticated") {
+  if (status === "authenticted") {
     router.push("/")
   }
+  
   return (
     <div className={styles.container}>
       <input type="text" placeholder="Title" className={styles.input}/>
